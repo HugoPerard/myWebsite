@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import "@fontsource/cookie";
 
 const myCompany = {
   name: "BearStudio",
@@ -43,6 +44,7 @@ export const Content = () => {
         alignItems: "center",
         justifyContent: "center",
         color: "white",
+        fontFamily: "Cookie",
       }}
     >
       <div
@@ -51,11 +53,11 @@ export const Content = () => {
           borderRadius: 6,
         }}
       >
-        <h1 style={{ fontSize: 40, marginBottom: 10 }}>I'm Hugo Pérard</h1>
-        <h2 style={{ fontSize: 20, marginTop: 0, marginBottom: 60 }}>
+        <h1 style={{ fontSize: 50, marginBottom: 10 }}>I'm Hugo Pérard</h1>
+        <h2 style={{ fontSize: 30, marginTop: 0, marginBottom: 60 }}>
           Web developer at <Link url={myCompany.url}>{myCompany.name}</Link>
         </h2>
-        <div>
+        <div style={{ fontSize: 20 }}>
           <p style={{ margin: 0, marginBottom: 4 }}>
             Follow me on{" "}
             <Link url={mySocialMedias[0].url}>{mySocialMedias[0].name}</Link>{" "}
